@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 15:57:02 by mmaila            #+#    #+#             */
-/*   Updated: 2024/02/28 16:44:42 by mmaila           ###   ########.fr       */
+/*   Updated: 2024/03/02 00:16:42 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,10 +56,10 @@ int	init_philo(t_data *data)
 
 int	check_input(t_data *data)
 {
-	if (data->num_of_meals == 0
-		|| data->time_to_die == 0
-		|| data->time_to_eat == 0
-		|| data->time_to_sleep == 0)
+	if (data->num_of_meals > 2147483647
+		|| data->time_to_die > 2147483647
+		|| data->time_to_eat > 2147483647
+		|| data->time_to_sleep > 2147483647)
 		return (ft_putstr_fd("invalid input\n", 2), 1);
 	return (0);
 }

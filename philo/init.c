@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 15:57:02 by mmaila            #+#    #+#             */
-/*   Updated: 2024/03/02 00:10:28 by mmaila           ###   ########.fr       */
+/*   Updated: 2024/03/02 00:14:18 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,10 +64,10 @@ int	check_input(t_rules *data)
 	i = 0;
 	while (i < data->philo_count)
 	{
-		if (data->philos[i].num_of_meals == 0
-			|| data->philos[i].time_to_die == 0
-			|| data->philos[i].time_to_eat == 0
-			|| data->philos[i].time_to_sleep == 0)
+		if (data->philos[i].num_of_meals > 2147483647
+			|| data->philos[i].time_to_die > 2147483647
+			|| data->philos[i].time_to_eat > 2147483647
+			|| data->philos[i].time_to_sleep > 2147483647)
 			return (1);
 		i++;
 	}

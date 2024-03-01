@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 21:43:23 by mmaila            #+#    #+#             */
-/*   Updated: 2024/02/27 15:25:52 by mmaila           ###   ########.fr       */
+/*   Updated: 2024/03/02 00:16:25 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,6 @@ int	ft_atoi(const char *str)
 	}
 	result = calcresult(str, sign, i);
 	if (result > 2147483647 || result < 0)
-		return (0);
+		return (-1);
 	return ((int)calcresult(str, sign, i));
 }
