@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 15:57:02 by mmaila            #+#    #+#             */
-/*   Updated: 2024/03/02 14:52:50 by mmaila           ###   ########.fr       */
+/*   Updated: 2024/03/02 15:10:38 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,9 +65,10 @@ int	check_input(t_data *data)
 
 void	init_data(t_data *data)
 {
-	data->num_of_meals = -1;
 	if (data->argc == 6)
 		data->num_of_meals = ft_atoi(data->argv[5]);
+	else
+		data->num_of_meals = -1;
 	data->philo_count = ft_atoi(data->argv[1]);
 	data->time_to_die = ft_atoi(data->argv[2]);
 	data->time_to_eat = ft_atoi(data->argv[3]);
