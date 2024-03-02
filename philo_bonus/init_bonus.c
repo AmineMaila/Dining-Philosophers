@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 15:57:02 by mmaila            #+#    #+#             */
-/*   Updated: 2024/03/02 00:16:42 by mmaila           ###   ########.fr       */
+/*   Updated: 2024/03/02 14:52:50 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	init_sem(t_data *data)
 		(ft_putstr_fd("sem failed\n", 2), terminate(data), exit(1));
 }
 
-int	init_philo(t_data *data)
+void	init_philo(t_data *data)
 {
 	int	i;
 
@@ -51,7 +51,6 @@ int	init_philo(t_data *data)
 		data->philo[i].write = data->write;
 		i++;
 	}
-	return (0);
 }
 
 int	check_input(t_data *data)

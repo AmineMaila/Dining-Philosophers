@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 18:17:04 by mmaila            #+#    #+#             */
-/*   Updated: 2024/02/28 18:10:17 by mmaila           ###   ########.fr       */
+/*   Updated: 2024/03/02 14:52:59 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
-
-// # define sem_wait(x) printf("wait  %s,line === %i\n",__FILE__,__LINE__)
-// # define sem_post(x) printf("post  %s,line === %i\n",__FILE__,__LINE__)
 
 typedef struct s_philo
 {
